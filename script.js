@@ -10,14 +10,20 @@ document.getElementById("theme-toggle").addEventListener("click", function () {
   }
 });
 
-async function fetchWords() {
-  const response = await fetch("words.json?" + new Date().getTime()); // Cache-busting query
+let selectedDataset = "words.json"; // Default dataset
+
+// Initialize the game when the page loads
+initializeGame();
+
+async function fetchWords(file) {
+  const response = await fetch(file + "?" + new Date().getTime()); // Cache-busting query
   if (!response.ok) {
-    console.error("Failed to load words.json");
+    console.error(`Failed to load ${file}`);
     return [];
   }
   return await response.json();
 }
+
 let words = [];
 let usedWords = []; // Track used words
 let correctCount = 0;
@@ -35,9 +41,10 @@ const memes = [
   "https://i.pinimg.com/736x/cb/34/0a/cb340aea9d643e9ca18e8a9956044b28.jpg",
   "https://images7.memedroid.com/images/UPLOADED465/66b29972a1346.jpeg",
 ];
+
 // Fetch the words from the JSON and initialize the game
 async function initializeGame() {
-  words = await fetchWords();
+  words = await fetchWords(selectedDataset);
   if (words.length > 0) {
     shuffleWords(); // Shuffle words initially
     loadNextWord();
@@ -56,15 +63,18 @@ function loadNextWord() {
   const randomNumber = Math.floor(Math.random() * 10000);
   const chance = Math.random(); // Random number between 0 and 1
   const probability = 0.1; // 10% probability of showing a number instead of a word
-  console.log(chance, probability);
-  if (chance <= probability) {
+
+  // Only allow numbers for specific datasets
+  const allowNumbers = selectedDataset === "words.json";
+
+  if (allowNumbers && chance <= probability) {
     const germanNumber = numberToGerman(randomNumber); // Get the German translation
     currentWord = { english: randomNumber, german: germanNumber };
   } else {
     // Continue with the normal vocabulary challenge
 
     if (words.length === 0) {
-      // If all words have been used print a congratulatory message that you have finsihed all words we have
+      // If all words have been used, print a congratulatory message
       document.getElementById("current-word-text").textContent =
         "Congratulations! You have finished all the words.";
       challenge_completed = true;
@@ -76,6 +86,7 @@ function loadNextWord() {
       currentWord = words.pop(); // Pop a random word
     } while (usedWords.includes(currentWord));
   }
+
   // Mark the word as used
   usedWords.push(currentWord);
 
@@ -295,5 +306,27 @@ function speakWord(word, lang = "de-DE") {
 document.getElementById("close-popup").onclick = function () {
   document.getElementById("meme-popup").style.display = "none";
 };
-// Initialize the game when the page loads
-initializeGame();
+
+// Attach event listeners to category buttons
+document.querySelectorAll("#category-selector button").forEach((button) => {
+  button.addEventListener("click", async function () {
+    selectedDataset = this.getAttribute("data-file"); // Update dataset based on user selection
+    console.log(`Selected dataset: ${selectedDataset}`);
+
+    // Reset game state
+    usedWords = [];
+    challenge_completed = false;
+    document.getElementById("current-word-text").textContent = ""; // Clear current word
+    document.getElementById("prev-word-text").innerHTML = ""; // Clear previous word
+    correctCount = 0;
+    wrongCount = 0;
+
+    // Update stats display
+    document.getElementById("correct-count").textContent = correctCount;
+    document.getElementById("wrong-count").textContent = wrongCount;
+    document.getElementById("average-time").textContent = "0.00s";
+
+    // Reinitialize the game with the new dataset
+    await initializeGame();
+  });
+});

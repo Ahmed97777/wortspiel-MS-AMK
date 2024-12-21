@@ -1,0 +1,136 @@
+[
+  {
+    "english": "Where is the nearest bus stop?",
+    "german": "Wo ist die nächste Bushaltestelle?"
+  },
+  {
+    "english": "Can you show me the way to the train station?",
+    "german": "Können Sie mir den Weg zum Bahnhof zeigen?"
+  },
+  { "english": "I am looking for a taxi.", "german": "Ich suche ein Taxi." },
+  {
+    "english": "Is this the road to the city center?",
+    "german": "Ist das der Weg ins Stadtzentrum?"
+  },
+  {
+    "english": "How far is the next gas station?",
+    "german": "Wie weit ist die nächste Tankstelle?"
+  },
+  { "english": "The traffic light is red.", "german": "Die Ampel ist rot." },
+  {
+    "english": "Cross the street at the zebra crossing.",
+    "german": "Überqueren Sie die Straße am Zebrastreifen."
+  },
+  {
+    "english": "Watch out for the cyclist.",
+    "german": "Achten Sie auf den Radfahrer."
+  },
+  {
+    "english": "The parking lot is full.",
+    "german": "Der Parkplatz ist voll."
+  },
+  {
+    "english": "I need directions to the nearest hospital.",
+    "german": "Ich brauche eine Wegbeschreibung zum nächsten Krankenhaus."
+  },
+  {
+    "english": "The bus arrives in 10 minutes.",
+    "german": "Der Bus kommt in 10 Minuten an."
+  },
+  {
+    "english": "Where is the pedestrian zone?",
+    "german": "Wo ist die Fußgängerzone?"
+  },
+  {
+    "english": "The road is under construction.",
+    "german": "Die Straße wird gebaut."
+  },
+  {
+    "english": "There is a traffic jam ahead.",
+    "german": "Es gibt einen Stau vor uns."
+  },
+  {
+    "english": "Turn left at the next intersection.",
+    "german": "Biegen Sie an der nächsten Kreuzung links ab."
+  },
+  {
+    "english": "Follow the signs to the highway.",
+    "german": "Folgen Sie den Schildern zur Autobahn."
+  },
+  {
+    "english": "The bridge is closed for maintenance.",
+    "german": "Die Brücke ist wegen Wartungsarbeiten geschlossen."
+  },
+  {
+    "english": "Is there a shortcut to the main street?",
+    "german": "Gibt es eine Abkürzung zur Hauptstraße?"
+  },
+  {
+    "english": "This is a one-way street.",
+    "german": "Das ist eine Einbahnstraße."
+  },
+  {
+    "english": "Where can I buy a parking ticket?",
+    "german": "Wo kann ich ein Parkticket kaufen?"
+  },
+  {
+    "english": "Where is the nearest restroom?",
+    "german": "Wo ist die nächste Toilette?"
+  },
+  {
+    "english": "Can you recommend a good restaurant nearby?",
+    "german": "Können Sie ein gutes Restaurant in der Nähe empfehlen?"
+  },
+  {
+    "english": "Where is the nearest supermarket?",
+    "german": "Wo ist der nächste Supermarkt?"
+  },
+  {
+    "english": "How can I get to the nearest hotel?",
+    "german": "Wie komme ich zum nächsten Hotel?"
+  },
+  {
+    "english": "Is there a pharmacy around here?",
+    "german": "Gibt es eine Apotheke hier in der Nähe?"
+  },
+  {
+    "english": "I need to find a bank or ATM.",
+    "german": "Ich muss eine Bank oder einen Geldautomaten finden."
+  },
+  {
+    "english": "Where is the nearest park?",
+    "german": "Wo ist der nächste Park?"
+  },
+  {
+    "english": "Is there a shopping mall nearby?",
+    "german": "Gibt es ein Einkaufszentrum in der Nähe?"
+  },
+  {
+    "english": "Can you tell me where the tourist information center is?",
+    "german": "Können Sie mir sagen, wo das Touristeninformationszentrum ist?"
+  },
+  {
+    "english": "How do I get to the nearest police station?",
+    "german": "Wie komme ich zur nächsten Polizeistation?"
+  },
+  {
+    "english": "Where is the nearest petrol station?",
+    "german": "Wo ist die nächste Tankstelle?"
+  },
+  {
+    "english": "Can you point me to the closest bookstore?",
+    "german": "Können Sie mir den Weg zur nächsten Buchhandlung zeigen?"
+  },
+  {
+    "english": "I need to find a post office.",
+    "german": "Ich muss eine Post finden."
+  },
+  {
+    "english": "How far is the nearest playground?",
+    "german": "Wie weit ist der nächste Spielplatz?"
+  },
+  {
+    "english": "Where can I find a taxi stand?",
+    "german": "Wo finde ich einen Taxistand?"
+  }
+]

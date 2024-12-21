@@ -76,6 +76,7 @@ h2 {
 
 /* Challenge Section */
 #challenge {
+  box-sizing: border-box;
   width: 80%;
   min-width: 200px;
   max-width: 800px;
@@ -93,6 +94,7 @@ h2 {
 }
 
 #prev-word-text {
+  overflow: auto;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -158,6 +160,11 @@ h2 {
 
 #submit-btn:hover {
   background: var(--button-hover-color);
+}
+
+#submit-btn:active {
+  transition: 0.3s;
+  transform: scale(1.1);
 }
 
 /* Theme Toggle Button */
@@ -247,6 +254,35 @@ h2 {
 
 .speak-btn:hover {
   color: #0073e6;
+}
+
+.form_selection_parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.form_selection_parent button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form_selection_parent button:hover {
+  background: var(--button-hover-color);
+}
+
+.form_selection_parent button:active {
+  transition: 0.3s;
+  transform: scale(1.1);
 }
 
 /* Theme Variables */

@@ -1,0 +1,22 @@
+[
+  { "english": "carrot", "german": "Karotte" },
+  { "english": "potato", "german": "Kartoffel" },
+  { "english": "tomato", "german": "Tomate" },
+  { "english": "onion", "german": "Zwiebel" },
+  { "english": "garlic", "german": "Knoblauch" },
+  { "english": "cucumber", "german": "Gurke" },
+  { "english": "pepper", "german": "Paprika" },
+  { "english": "spinach", "german": "Spinat" },
+  { "english": "lettuce", "german": "Kopfsalat" },
+  { "english": "broccoli", "german": "Brokkoli" },
+  { "english": "cauliflower", "german": "Blumenkohl" },
+  { "english": "mushroom", "german": "Pilz" },
+  { "english": "pea", "german": "Erbse" },
+  { "english": "bean", "german": "Bohne" },
+  { "english": "zucchini", "german": "Zucchini" },
+  { "english": "pumpkin", "german": "Kürbis" },
+  { "english": "celery", "german": "Sellerie" },
+  { "english": "asparagus", "german": "Spargel" },
+  { "english": "eggplant", "german": "Aubergine" },
+  { "english": "radish", "german": "Radieschen" }
+]
