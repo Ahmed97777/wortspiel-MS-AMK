@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wort Spiel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Central Welcome Section -->
+    <header id="welcome-section">
+      <h1>Willkommen!</h1>
+      <p>Improve your German vocabulary one word at a time!</p>
+      <button id="theme-toggle" class="theme-toggle-btn">🌙</button>
+    </header>
+
+    <!-- Statistics Section -->
+    <section id="statistics">
+      <h2>Your Stats</h2>
+      <div id="stats-container">
+        <div class="stat">
+          <span id="correct-count">0</span>
+          <p>Correct Words</p>
+        </div>
+        <div class="stat">
+          <span id="wrong-count">0</span>
+          <p>Wrong Words</p>
+        </div>
+        <div class="stat">
+          <span id="average-time">0.0s</span>
+          <p>Average Time</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenge Section -->
+    <section id="challenge">
+      <h2>Challenge</h2>
+      <div id="previous-word">
+        <p id="prev-word-text" class="neutral">Previous: 🫢</p>
+      </div>
+      <div id="current-word">
+        <p id="current-word-text">Current Word: -</p>
+      </div>
+      <div id="translation-input">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Enter the German word..."
+        />
+        <button id="submit-btn">Submit</button>
+      </div>
+    </section>
+
+    <div id="meme-popup" class="popup">
+      <div class="popup-content">
+        <span id="close-popup" class="close-btn">&times;</span>
+        <img id="meme-image" src="" alt="Meme" />
+      </div>
+    </div>
+
+    <!-- Placeholder for future JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
